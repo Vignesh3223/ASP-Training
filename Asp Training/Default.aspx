@@ -43,12 +43,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 d-flex flex-column">
-                <div classs="mt-2">
+            <div class="col-md-8 d-flex flex-column mt-3">
+                <div class="d-flex justify-content-center align-items-center">
                     <asp:Label ID="successMessage" runat="server" CssClass="alert alert-success" Visible="false"></asp:Label>
                     <asp:Label ID="errorMessage" runat="server" CssClass="alert alert-danger" Visible="false"></asp:Label>
                 </div>
-                <div class="mt-5">
+                <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" CssClass="custom-grid">
                         <EmptyDataTemplate>
                             <div>No data available</div>
