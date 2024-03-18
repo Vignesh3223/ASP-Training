@@ -50,9 +50,9 @@ namespace Asp_Training
         {
             SqlCommand command = new SqlCommand("exec ViewUsers_sp",connection);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command);
-            DataTable dataTable = new DataTable();
-            sqlDataAdapter.Fill(dataTable);
-            GridView1.DataSource = dataTable;
+            DataSet dataSet = new DataSet();
+            sqlDataAdapter.Fill(dataSet);
+            GridView1.DataSource = dataSet;
             GridView1.DataBind();
         }
 
