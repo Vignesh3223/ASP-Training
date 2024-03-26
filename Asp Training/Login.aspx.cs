@@ -35,6 +35,8 @@ namespace Asp_Training
                     TextBox2.Text = "";
                     if (reader.HasRows)
                     {
+                        Session["LoggedIn"] = true;
+                        Session["Username"] = uname;
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Logged In Successfully..!'); setTimeout(function(){ window.location.href = 'Default.aspx'; }, 1000);", true);
                     }
                     else
