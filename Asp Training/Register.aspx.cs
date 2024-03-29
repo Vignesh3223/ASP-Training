@@ -16,7 +16,8 @@ namespace Asp_Training
 
         }
 
-        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True");
+        //SqlConnection connection = new SqlConnection("Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True");
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-AUR9CJ4;Initial Catalog=Asp_training;Integrated Security=True");
         protected void btnRegister_Click(object sender, EventArgs e)
         {
             string fname = TextBox1.Text;

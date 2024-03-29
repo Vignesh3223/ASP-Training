@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Asp_Training.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Asp_Training.Login" Theme="Common" %>
 
 <!DOCTYPE html>
 
@@ -15,16 +15,16 @@
                 <h1>Login</h1>
                 <form id="form1" runat="server" class="mt-4">
                     <div class="form-group mb-3">
-                        <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label><br />
+                        <asp:Label ID="Label1" runat="server" Text="Username" SkinID="labelskin"></asp:Label><br />
                         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Required Field" ControlToValidate="TextBox1" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                     <div class="form-group mb-3">
-                        <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label><br />
+                        <asp:Label ID="Label2" runat="server" Text="Password" SkinID="labelskin"></asp:Label><br />
                         <asp:TextBox ID="TextBox2" runat="server"  TextMode="Password"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Required Field" ControlToValidate="TextBox2" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
-                    <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Login" OnClick="btnLogin_Click" /><br />
+                    <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Login" OnClick="btnLogin_Click" SkinID="createbtnskin"/><br />
                     <p class="mt-3">New User?
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Register.aspx">Create an account...</asp:HyperLink></p>
                 </form>

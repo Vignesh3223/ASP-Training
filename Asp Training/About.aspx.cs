@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Xml.Linq;
 
 namespace Asp_Training
 {
@@ -20,8 +16,8 @@ namespace Asp_Training
             }
         }
 
-        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True");
-
+        //SqlConnection connection = new SqlConnection("Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True");
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-AUR9CJ4;Initial Catalog=Asp_training;Integrated Security=True");
         protected void btnInsert_Click(object sender, EventArgs e)
         {
             int uid = int.Parse(TextBox1.Text);

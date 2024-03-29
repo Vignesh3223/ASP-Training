@@ -23,7 +23,8 @@ namespace Asp_Training
                                         $"Lastname varchar(50)," +
                                         $"Email varchar(50)" +
                                         ")";
-            string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            //string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-AUR9CJ4;Initial Catalog=Asp_training;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(createTableQuery, connection))
@@ -51,7 +52,8 @@ namespace Asp_Training
         protected void btnDisplay_Click(object sender, EventArgs e)
         {
             string displayQuery = $"SELECT * FROM Employees";
-            string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            //string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-AUR9CJ4;Initial Catalog=Asp_training;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(displayQuery, connection))
@@ -88,7 +90,8 @@ namespace Asp_Training
             string insertQuery = $"INSERT INTO Employees " +
                                  $"(Id, Firstname, Lastname, Email) " +
                                  $"VALUES (@id, @fname, @lname, @email)";
-            string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            //string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-AUR9CJ4;Initial Catalog=Asp_training;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(insertQuery, connection))
@@ -163,7 +166,8 @@ namespace Asp_Training
             string value3 = TextBox8.Text;
             string value4 = TextBox9.Text;
             string updateQuery = $"UPDATE Employees SET Firstname = @fname, Lastname = @lname, Email = @email WHERE Id = @id";
-            string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            //string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-AUR9CJ4;Initial Catalog=Asp_training;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(updateQuery, connection))
@@ -203,7 +207,8 @@ namespace Asp_Training
             string value3 = TextBox8.Text;
             string value4 = TextBox9.Text;
             string deleteQuery = $"DELETE FROM Employees where Id = @id";
-            string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            //string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-AUR9CJ4;Initial Catalog=Asp_training;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(deleteQuery, connection))
@@ -244,7 +249,8 @@ namespace Asp_Training
         protected void btnDrop_Click(object sender, EventArgs e)
         {
             string dropTableQuery = $"DROP TABLE Employees";
-            string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            //string connectionString = "Data Source=DESKTOP-I5NO16G\\SQLEXPRESS2019;Initial Catalog=Asp_training;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-AUR9CJ4;Initial Catalog=Asp_training;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(dropTableQuery, connection))
